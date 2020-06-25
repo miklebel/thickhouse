@@ -2,7 +2,9 @@
 ClickHouse test app
 
 # Запуск
-Запуск через "npm run dev"
+```shell
+npm run dev
+```
 
 # Настройка через dotenv
 
