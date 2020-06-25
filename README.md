@@ -22,14 +22,15 @@ MAXBUFFER - максимальный размер буфера до синхро
 
 # Примеры запросов
 Довляет нового покупателя в буфер Redis
-<curl --location --request POST 'http://localhost:3000/create/customers' \
+```shell
+curl --location --request POST 'http://localhost:3000/create/customers' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "name",
     "middlename": "middlename",
     "surname": "surname"
-}'>
-
+}'
+```
 Добавляет нового работника в буфер Redis
 curl --location --request POST 'http://localhost:3000/create/employees' \
 --header 'Content-Type: application/json' \
