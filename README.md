@@ -32,6 +32,7 @@ curl --location --request POST 'http://localhost:3000/create/customers' \
 }'
 ```
 Добавляет нового работника в буфер Redis
+```shell
 curl --location --request POST 'http://localhost:3000/create/employees' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -39,6 +40,9 @@ curl --location --request POST 'http://localhost:3000/create/employees' \
     "middlename": "middlename",
     "surname": "surname"
 }'
+```
 
 Получает данные из CH и Redis
+```shell
 curl --location --request GET 'http://localhost:3000/tables'
+```
