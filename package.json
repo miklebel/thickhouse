@@ -20,7 +20,7 @@
     "build": "tsc",
     "debug": "set DEBUG=* && tsc && node ./dist/server.js",
     "start": "node -r ts-node/register ./src/server.ts",
-    "start:watch": "nodemon"
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
