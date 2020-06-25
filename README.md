@@ -20,3 +20,24 @@ SYNCTIMER - таймер до синхронизации из Redis в CH в м�
 
 MAXBUFFER - максимальный размер буфера до синхронизации
 
+# Примеры запросов
+Довляет нового покупателя в буфер Redis
+curl --location --request POST 'http://localhost:3000/create/customers' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "name",
+    "middlename": "middlename",
+    "surname": "surname"
+}'
+
+Добавляет нового работника в буфер Redis
+curl --location --request POST 'http://localhost:3000/create/employees' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "name",
+    "middlename": "middlename",
+    "surname": "surname"
+}'
+
+Получает данные из CH и Redis
+curl --location --request GET 'http://localhost:3000/tables'
